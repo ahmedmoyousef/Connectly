@@ -9,7 +9,7 @@ import '../services/telegram_launcher.dart';
 class ActionButtons extends StatelessWidget {
   final ValidPhoneNumber? phoneNumber;
   bool get isEnabled => phoneNumber != null;
-  const ActionButtons({Key? key, required this.phoneNumber}) : super(key: key);
+  const ActionButtons({super.key, required this.phoneNumber});
 
   void _showToast(String message) {
     Fluttertoast.showToast(msg: message);

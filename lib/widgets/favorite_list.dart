@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
+import 'package:hive_ce/hive.dart';
 import '../models/phone_contact.dart';
 
 class FavoriteList extends StatelessWidget {
-  const FavoriteList({Key? key}) : super(key: key);
+  const FavoriteList({super.key});
 
   @override
   Widget build(BuildContext context) {

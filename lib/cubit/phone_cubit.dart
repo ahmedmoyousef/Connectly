@@ -50,7 +50,7 @@ class PhoneCubit extends Cubit<PhoneState> {
   }
 
   void changeCountry(Country newCountry) {
-    this.country = newCountry;
+    country = newCountry;
     emit(
       state.copyWith(
         phoneCode: country.displayCode,

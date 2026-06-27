@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AboutApplication extends StatelessWidget {
   static const String routeName = '/about_application';
-  const AboutApplication({Key? key}) : super(key: key);
+  const AboutApplication({super.key});
 
   @override
   Widget build(BuildContext context) {

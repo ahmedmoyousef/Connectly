@@ -10,11 +10,11 @@ class GenericPicker<T extends SelectableItem> extends StatefulWidget {
   final String title;
 
   const GenericPicker({
-    Key? key,
+    super.key,
     required this.items,
     required this.onSelected,
     this.title = 'Select Item',
-  }) : super(key: key);
+  });
 
   @override
   State<GenericPicker<T>> createState() => _GenericPickerState<T>();

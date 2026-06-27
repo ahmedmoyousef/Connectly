@@ -8,7 +8,7 @@ import '../widgets/action_buttons.dart';
 
 class HomeScreen extends StatelessWidget {
   static const String routeName = '/home';
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

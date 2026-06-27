@@ -21,7 +21,7 @@ void main() async {
 }
 
 class ConnectlyApp extends StatelessWidget {
-  const ConnectlyApp({Key? key}) : super(key: key);
+  const ConnectlyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,7 @@ class ConnectlyApp extends StatelessWidget {
 }
 
 class PrivacyPolicyScreen extends StatelessWidget {
-  const PrivacyPolicyScreen({Key? key}) : super(key: key);
+  const PrivacyPolicyScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

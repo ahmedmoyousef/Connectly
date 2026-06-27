@@ -7,7 +7,7 @@ import '../cubit/phone_cubit.dart';
 
 class PhoneInputField extends StatelessWidget {
   final TextEditingController controller = TextEditingController();
-  PhoneInputField({Key? key}) : super(key: key);
+  PhoneInputField({super.key});
 
   @override
   Widget build(BuildContext context) {

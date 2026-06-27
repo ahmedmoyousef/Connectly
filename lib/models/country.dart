@@ -13,7 +13,8 @@ class Country implements SelectableItem {
   final String phoneMaskMobileInternational; // '+00 0000 000000',
   final String phoneMaskFixedLineInternational; // '+00 000 000 0000',
   final String? countryName; // 'United Kingdom';
-  String get displayCode => (countryCode + " +" + phoneCode);
+  String get displayCode => ("$countryCode +$phoneCode");
+  @override
   String get displayedName => countryName ?? displayCode;
   Country({
     required this.phoneCode,

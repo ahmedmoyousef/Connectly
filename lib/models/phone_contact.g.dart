@@ -8,7 +8,7 @@ part of 'phone_contact.dart';
 
 class PhoneContactAdapter extends TypeAdapter<PhoneContact> {
   @override
-  final int typeId = 0;
+  final typeId = 0;
 
   @override
   PhoneContact read(BinaryReader reader) {
@@ -18,7 +18,7 @@ class PhoneContactAdapter extends TypeAdapter<PhoneContact> {
     };
     return PhoneContact(
       phoneNumber: fields[0] as String,
-      isFavorite: fields[1] as bool,
+      isFavorite: fields[1] == null ? false : fields[1] as bool,
     );
   }
 

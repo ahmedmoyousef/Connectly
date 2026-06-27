@@ -6,9 +6,7 @@ class PhoneNumberHelper {
   static late final Map<String, CountryWithPhoneCode> supportedRegions;
   static CountryWithPhoneCode? currentRegion;
   static String get displayCode =>
-      ((currentRegion?.countryCode ?? '') +
-          " +" +
-          (currentRegion?.phoneCode ?? ''));
+      ("${currentRegion?.countryCode ?? ''} +${currentRegion?.phoneCode ?? ''}");
 
   static Future<void> setup() async {
     await init();
